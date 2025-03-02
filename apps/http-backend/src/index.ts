@@ -6,7 +6,8 @@ import { middleware } from "./middleware";
 const app = express();
 
 app.post("/signup", (req, res) => {
-
+    //db call
+    
 })
 
 app.post("/signin", (req, res) => {
@@ -23,6 +24,9 @@ app.post("/signin", (req, res) => {
 
 app.post("/room", middleware, (req, res) => {
     
+    res.json({
+        roomId: 123
+    })
 })
 
 app.listen(3001);
